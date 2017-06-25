@@ -9,7 +9,109 @@
 
 		<body>
 			<cms:svg file="site_sprite.svg"/>
-			<h1>משהו בעברית</h1>
+
+			<section class="header">
+				<!-- Background image logo -->
+					<a href="top" class="logo"></a>
+
+					<!-- Phone -->
+					<a
+						href="'tel:'.urlencode(Language::get_Text('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:text constant="phone" />
+						<cms:svg file="site_sprite.svg" symbol="icon-phone"/>
+					</a>
+
+				<cms:module
+					name="articles"
+					action="show"
+					group="header_articles"
+					text_id="header_article"
+					template="parts/article_template.xml"
+					/>
+					<div class="form_container">
+						<h3><cms:text constant="leave_details"/></h3>
+						<cms:module
+							name="contact_form"
+							action="show"
+							text_id="contact_form"
+							/>
+					</div>
+			</section>
+			<!-- section features -->
+			<section class="features">
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="features"
+					template="stock/features_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="sprite" value="site_sprite.svg"/>
+				</cms:module>
+			</section>
+			<!-- section images -->
+			<section class="assets">
+				<cms:module
+					name="gallery"
+					action="show_image_list"
+					group="assets_gallery"
+					order_by="text_id"
+					template="parts/gallery_template.xml"
+					/>
+			</section>
+			<!-- Static banner -->
+			<div class="banner">
+				<!-- Background image logo -->
+				<a href="top" class="logo"></a>
+				<h2><cms:text constant="how_to_do"/></h2>
+				<!-- Phone -->
+				<a
+					href="'tel:'.urlencode(Language::get_Text('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="phone" />
+				</a>
+			</div>
+			<!-- section benifits-->
+			<section class="benifits">
+				<!-- Features -->
+				<cms:module
+					name="articles"
+					action="show_list"
+					group="features_benifits"
+					template="stock/features_generic.xml"
+					>
+					<param name="title" value=""/>
+					<param name="sprite" value="site_sprite.svg"/>
+				</cms:module>
+			</section>
+			<!-- Footer -->
+			<footer>
+				<!-- Background image logo -->
+				<a href="top" class="logo"></a>
+				<h2><cms:text constant="how_to_do"/></h2>
+				<!-- Phone -->
+				<a
+					href="'tel:'.urlencode(Language::get_Text('phone'))"
+					cms:eval="href"
+					class="phone"
+					>
+					<cms:text constant="phone" />
+				</a>
+
+				<div class="form_container">
+					<h3><cms:text constant="leave_details"/></h3>
+					<cms:module
+						name="contact_form"
+						action="show"
+						text_id="contact_form"
+						/>
+				</div>
+			</footer>
 		</body>
 	</html>
 </document>

@@ -1,0 +1,403 @@
+/**
+ * Content Definitions
+ * Brinks Safe
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+
+section.header {
+	padding: 0em calc(~'(100% - 1200px)' / 2);
+	box-sizing: border-box;
+	padding-top: 1em;
+	min-height: 700px;
+	background-color: fade(red, 50%);
+
+	background-image: url(../images/header_background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	position: relative;
+}
+
+section.header a.logo {
+	 display: inline-block;
+	 vertical-align: middle;
+	 width: 300px;
+	 height: 55px;
+
+	 background-image: url(../images/logo.svg);
+	 background-size: 100% auto;
+	 background-repeat: no-repeat;
+	 background-position: center;
+}
+
+section.header a.phone {
+	display: inline-block;
+	vertical-align: middle;
+	color: @color_blue;
+	font-weight: 700;
+	font-size: 3em;
+	text-decoration: none;
+	padding-right: calc(~'(100% - 500px)');
+
+
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 50px;
+		height: 50px;
+		margin-right: 5px;
+		fill: @color_blue;
+	}
+}
+
+section.header article {
+	text-align: center;
+	padding-top:  50px;
+
+	h1 {
+		font-size: 3em;
+		font-weight: 800;
+	}
+
+	p {
+		font-size: 1.5em;
+	}
+}
+
+section.header div.form_container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: fade(@color_text, 50%);
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1em 0;
+
+	h3 {
+		color: white;
+		font-weight: 400;
+		margin: 0;
+		padding-bottom: 0.5em;
+	}
+}
+
+section.header div.form_container form {
+	width: 1200px;
+	margin: 0 auto;
+	color: white;
+}
+
+section.header div.form_container form div.controls,
+section.header div.form_container form label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+section.header div.form_container form label input {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 0.7em 1em;
+	width: 80%;
+	border: 1px solid grey;
+	transition: all 0.3s;
+
+	&:hover,
+	&:focus {
+		border: 1px solid @color_blue;
+	}
+
+}
+
+section.header div.form_container form label span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 15%;
+	padding: 0 2.5%;
+}
+
+section.header div.form_container form div.controls button {
+	height: 44px;
+	float: right;
+	margin-right: 1em;
+	padding: 0 1.5em;
+	border: 1px solid @color_text;
+	background-color: @color_blue;
+	color: white;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: lighten(@color_blue, 10%);
+	}
+}
+
+/**
+ * Section features
+ */
+section.features {
+	padding: 1em calc(~'(100% - 1200px)' / 2);
+
+	li {
+		list-style: none;
+		display: inline-block;
+		vertical-align: middle;
+		width: 25%;
+		box-sizing: border-box;
+		text-align: center;
+
+		svg {
+			width: 100px;
+			height: 80px;
+			display: block;
+			margin: 0 auto;
+			padding-bottom: 0.5em;
+			fill: @color_blue;
+		}
+	}
+}
+
+/**
+ * Section assets
+*/
+section.assets {
+	padding: 0em calc(~'(100% - 1200px)' / 2);
+
+	figure {
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0;
+
+		img {
+			display: block;
+		}
+
+		h3 {
+			margin: 0;
+			padding-top: 0.5em;
+			padding-bottom: 1.5em;
+			text-align: center;
+			font-weight: 400;
+		}
+	}
+}
+
+
+/**
+ *  Banner
+*/
+
+div.banner {
+	background-image: url(../images/texture.png);
+	background-repeat: repeat;
+	background-size: 100% auto;
+	background-position: center;
+	text-align: center;
+	padding: 50px 0;
+}
+
+div.banner a.logo {
+	 display: inline-block;
+	 vertical-align: middle;
+	 width: 300px;
+	 height: 55px;
+
+	 background-image: url(../images/logo.svg);
+	 background-size: 100% auto;
+	 background-repeat: no-repeat;
+	 background-position: center;
+}
+
+div.banner a.phone {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	font-weight: 700;
+	font-size: 3em;
+	text-decoration: none;
+	border: 3px solid white;
+	padding: 0.2em 0.5em;
+
+	svg {
+		fill: @color_blue;
+	}
+}
+
+div.banner h2 {
+	color: white;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 3em;
+	padding: 0 1em;
+}
+
+
+/**
+ * Section benifits
+*/
+
+section.benifits {
+	padding: 0 calc(~'(100% - 1200px)' / 2);
+	min-height: 350px;
+
+	background-image: url(../images/features_background.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 100px;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		vertical-align: middle;
+		width: 400px;
+		font-size: 1em;
+		padding-bottom: 50px;
+		color: white;
+
+		h4 {
+			display: inline-block;
+			vertical-align: middle;
+			font-weight: 400;
+			margin: 0;
+		}
+
+		svg {
+			display: inline-block;
+			vertical-align: middle;
+			width: 50px;
+			height: 50px;
+			padding-left: 1em;
+			fill: white;
+		}
+	}
+}
+
+
+/**
+ * Footer
+*/
+footer {
+	padding: 0em calc(~'(100% - 1200px)' / 2);
+	box-sizing: border-box;
+	padding-top: 1em;
+	min-height: 700px;
+	background-image: url(../images/footer_background.jpg);
+	background-position: center top;
+	background-repeat: no-repeat;
+
+	position: relative;
+	text-align: center;
+}
+
+footer h2 {
+	font-size: 3em;
+	font-weight: 700;
+	padding: 0.5em 0;
+	margin: 0;
+}
+
+footer a.logo {
+	display: block;
+	width: 600px;
+	height: 155px;
+	margin: 0 auto;
+	background-image: url(../images/logo.svg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+footer a.phone {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	font-weight: 700;
+	font-size: 5em;
+	text-decoration: none;
+	background-color: @color_blue;
+	padding: 0.2em 0.5em;
+
+	svg {
+		display: inline-block;
+		vertical-align: middle;
+		width: 50px;
+		height: 50px;
+		margin-right: 5px;
+		fill: @color_blue;
+	}
+}
+
+footer div.form_container {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background-color: fade(@color_text, 50%);
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1em 0;
+
+	h3 {
+		color: white;
+		font-weight: 400;
+		margin: 0;
+		padding-bottom: 0.5em;
+	}
+}
+
+footer div.form_container form {
+	width: 1200px;
+	margin: 0 auto;
+	color: white;
+}
+
+footer div.form_container form div.controls,
+footer div.form_container form label {
+	display: inline-block;
+	vertical-align: middle;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+footer div.form_container form label input {
+	display: inline-block;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding: 0.7em 1em;
+	width: 80%;
+	border: 1px solid grey;
+	transition: all 0.3s;
+
+	&:hover,
+	&:focus {
+		border: 1px solid @color_blue;
+	}
+}
+
+footer div.form_container form label span {
+	display: inline-block;
+	vertical-align: middle;
+	width: 15%;
+	padding: 0 2.5%;
+}
+
+footer div.form_container form div.controls button {
+	height: 44px;
+	float: right;
+	margin-right: 1em;
+	padding: 0 1.5em;
+	border: 1px solid @color_text;
+	background-color: @color_blue;
+	color: white;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: lighten(@color_blue, 10%);
+	}
+}

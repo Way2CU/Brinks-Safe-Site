@@ -1,0 +1,10 @@
+<document>
+	<figure>
+		<img
+			src="gallery::getThumbnailById($params['id'], null, 600, Thumbnail::CONSTRAIN_HEIGHT)"
+			alt="$params['title'][$language]"
+			cms:eval="src,alt"
+		/>
+		<h3><cms:var param="title" multilanguage="yes"/></h3>
+	</figure>
+</document>
