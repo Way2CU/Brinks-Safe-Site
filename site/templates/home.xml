@@ -9,7 +9,7 @@
 
 		<body>
 			<cms:svg file="site_sprite.svg"/>
-			<h1>It works!</h1>
+			<h1>משהו בעברית</h1>
 		</body>
 	</html>
 </document>
