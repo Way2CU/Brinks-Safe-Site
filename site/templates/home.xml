@@ -9,8 +9,23 @@
 
 		<body>
 			<cms:svg file="site_sprite.svg"/>
+			<cms:mobile>
+				<header>
+				<!-- Background image logo -->
+					<a href="top" class="logo"></a>
 
+					<!-- Phone -->
+					<a
+						href="'tel:'.urlencode(Language::get_Text('phone'))"
+						cms:eval="href"
+						class="phone"
+						>
+						<cms:svg file="site_sprite.svg" symbol="icon-phone"/>
+					</a>
+				</header>
+			</cms:mobile>
 			<section class="header">
+				<cms:desktop>
 				<!-- Background image logo -->
 					<a href="top" class="logo"></a>
 
@@ -23,7 +38,7 @@
 						<cms:text constant="phone" />
 						<cms:svg file="site_sprite.svg" symbol="icon-phone"/>
 					</a>
-
+				</cms:desktop>
 				<cms:module
 					name="articles"
 					action="show"
@@ -31,6 +46,16 @@
 					text_id="header_article"
 					template="parts/article_template.xml"
 					/>
+
+					<!-- mobile image seperator -->
+					<cms:mobile>
+						<img
+							src="_BASEURL.'/site/images/mobile_header.jpg'"
+							alt="woman_with_coffe"
+							cms:eval="src"
+							/>
+					</cms:mobile>
+
 					<div class="form_container">
 						<h3><cms:text constant="leave_details"/></h3>
 						<cms:module
@@ -102,7 +127,14 @@
 					>
 					<cms:text constant="phone" />
 				</a>
-
+				<!-- mobile image seperator -->
+				<cms:mobile>
+					<img
+						src="_BASEURL.'/site/images/mobile_footer.jpg'"
+						alt="brinks_car"
+						cms:eval="src"
+						/>
+				</cms:mobile>
 				<div class="form_container">
 					<h3><cms:text constant="leave_details"/></h3>
 					<cms:module

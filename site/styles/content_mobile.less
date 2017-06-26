@@ -1,0 +1,367 @@
+/**
+ * Content_mobile Style Sheet
+ * Brinks Safe
+ *
+ * Copyright (c) 2017. by Way2CU, http://way2cu.com
+ * Authors: Iliya Melishev
+ */
+header {
+	background-color: white;
+	min-height: 60px;
+	text-align: center;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.75);
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	a.logo {
+		display: inline-block;
+		vertical-align: middle;
+		width: 150px;
+		height: 55px;
+
+		background-image: url(../images/logo.svg);
+		background-size: 100% auto;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	a.phone {
+		display: inline-block;
+		vertical-align: middle;
+		color: @color_blue;
+		text-decoration: none;
+		float: left;
+		padding: 0.5em 0 0 0.5em;
+
+		svg {
+			display: inline-block;
+			vertical-align: middle;
+			width: 35px;
+			height: 35px;
+			fill: @color_blue;
+		}
+	}
+}
+
+section.header {
+	padding-top: 60px;
+
+	img {
+		width: 100%;
+		display: block;
+	}
+
+	article {
+		box-sizing: border-box;
+		padding: 0 1em;
+		text-align: center;
+		padding-top: 1em;
+	}
+
+	article p {
+		margin: 0;
+		color: @color_blue;
+	}
+
+	article h1 {
+		margin: 0;
+		color: @color_blue;
+	}
+}
+
+section.header div.form_container {
+	background-color: @color_text;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1em;
+	padding-bottom: 0.5em;
+
+	h3 {
+		color: white;
+		font-weight: 400;
+		margin: 0;
+		padding-bottom: 0.5em;
+	}
+}
+
+section.header div.form_container form div.controls,
+section.header div.form_container form label {
+	display: block;
+	box-sizing: border-box;
+}
+
+section.header div.form_container form label input {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.7em 1em;
+	border: 1px solid grey;
+	margin-bottom: 0.5em;
+
+	&:focus {
+		border: 1px solid @color_blue;
+	}
+
+}
+
+section.header div.form_container form label span {
+	display: block;
+	width: 100%;
+	padding-bottom: 0.5em;
+	color: white;
+	text-align: right;
+}
+
+section.header div.form_container form div.controls button {
+	height: 44px;
+	margin-right: 1em;
+	padding: 0 2em;
+	border: 1px solid @color_text;
+	background-color: @color_blue;
+	color: white;
+}
+
+/**
+ * Section features
+ */
+section.features {
+	padding: 1em;
+
+	li {
+		list-style: none;
+		display: block;
+		width: 300px;
+		box-sizing: border-box;
+		text-align: center;
+		margin: 0 auto;
+		margin-bottom: 1em;
+
+		svg {
+			width: 50px;
+			height: 50px;
+			display: block;
+			margin: 0 auto;
+			padding: 1em 0;
+			fill: @color_blue;
+		}
+	}
+}
+
+
+/**
+ * Section assets
+*/
+section.assets {
+	padding: 0em 1em;
+
+	figure {
+		display: block;
+		width: 100%;
+		margin: 0;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		h3 {
+			margin: 0;
+			padding-top: 0.5em;
+			padding-bottom: 1.5em;
+			text-align: center;
+			font-weight: 400;
+		}
+	}
+}
+
+/**
+ *  Banner
+*/
+
+div.banner {
+	background-image: url(../images/texture.png);
+	background-repeat: repeat;
+	background-size: 100% auto;
+	background-position: center;
+	text-align: center;
+	padding: 50px 0;
+}
+
+div.banner a.logo {
+	 display: inline-block;
+	 vertical-align: middle;
+	 width: 80%;
+	 height: 55px;
+
+	 background-image: url(../images/logo-white.svg);
+	 background-size: 100% auto;
+	 background-repeat: no-repeat;
+	 background-position: center;
+}
+
+div.banner a.phone {
+	display: inline-block;
+	vertical-align: middle;
+	color: white;
+	font-weight: 700;
+	font-size: 3em;
+	text-decoration: none;
+	border: 3px solid white;
+	padding: 0.2em 0.5em;
+	transition: all 0.3s;
+
+	&:hover {
+		background-color: @color_blue;
+		color: white;
+	}
+
+	svg {
+		fill: @color_blue;
+	}
+}
+
+div.banner h2 {
+	color: white;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 1em;
+}
+
+/**
+ * Section benifits
+*/
+
+section.benifits {
+	padding: 0 1em;
+	padding-top: 100px;
+	background-color: @color_blue;
+
+	li {
+		list-style: none;
+		display: inline-block;
+		vertical-align: middle;
+		width: 300px;
+		font-size: 1em;
+		padding-bottom: 50px;
+		color: white;
+		box-sizing: border-box;
+		text-align: center;
+
+		h4 {
+			display: block;
+			font-weight: 400;
+			margin: 0;
+			margin-top: 0.5em;
+		}
+
+		svg {
+			display: block;
+			width: 50px;
+			height: 50px;
+			fill: white;
+			margin: 0 auto;
+		}
+	}
+}
+
+
+/**
+ * Footer
+*/
+footer {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+footer a.logo {
+	display: block;
+	width: 80%;
+	height: 50px;
+	margin: 0 auto;
+	background-image: url(../images/logo.svg);
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 1em;
+}
+
+footer h2 {
+	font-weight: 700;
+	margin: 0;
+	color: @color_blue;
+	padding-bottom: 1em;
+}
+
+footer a.phone {
+	display: block;
+	margin: 0 auto;
+	color: white;
+	font-weight: 700;
+	text-decoration: none;
+	background-color: @color_blue;
+
+	padding: 1.5em 0;
+	width: 70%;
+}
+
+footer img {
+	display: block;
+	width: 100%;
+}
+
+footer div.form_container {
+	display: block;
+	width: 100%;
+	background-color: @color_text;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 1em;
+
+	h3 {
+		color: white;
+		font-weight: 400;
+		margin: 0;
+		padding-bottom: 0.5em;
+	}
+}
+
+footer div.form_container form {
+	margin: 0 auto;
+	color: white;
+}
+
+footer div.form_container form div.controls,
+footer div.form_container form label {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+footer div.form_container form label input {
+	display: block;
+	box-sizing: border-box;
+	padding: 0.7em 1em;
+	width: 100%;
+	border: 1px solid grey;
+	margin-bottom: 1em;
+	&:focus {
+		border: 1px solid @color_blue;
+	}
+}
+
+footer div.form_container form label span {
+	display: block;
+	text-align: right;
+	padding-bottom: 0.5em;
+}
+
+footer div.form_container form div.controls button {
+	height: 50px;
+	width: 80%;
+	border: 1px solid @color_text;
+	background-color: @color_blue;
+	color: white;
+}
