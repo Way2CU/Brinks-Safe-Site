@@ -7,7 +7,7 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [ ] Deployment script `group_vars/all` file is configured;
 	- [x] Deployment `hosts.txt` file is configured;
 	- [x] All the languages site is targeting are configured in `config.php`;
-	- [ ] Site title is properly defined;
+	- [x] Site title is properly defined;
 	- [x] No errors or warnings are reported in the log file;
 	>- [x] Templates for registering and recovering user password are created and selected;
 	- [x] PNG images are optimized using `optipng` command;
@@ -23,8 +23,8 @@ All of these need to be checked manually, changed and then committed. System wil
 	- [x] SendGrid API access is configured;
 	>- [x] Mandrill API access is configured;
 	>- [x] SMTP credentials are configured and working;
-	- [ ] Default sender email;
-	- [ ] Default recipient;
+	- [x] Default sender email;
+	- [x] Default recipient;
 	- [x] Forms have honeypot field;
 	- [x] Templates for each form are created and assigned to form;
 	- [x] Templates have subject properly defined;
