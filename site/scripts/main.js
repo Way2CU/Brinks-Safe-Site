@@ -55,11 +55,20 @@ Site.on_load = function() {
 		var dataLayer = window.dataLayer || new Array();
 		for (var i=0, count=Caracal.ContactForm.list.length; i<count; i++)
 			Caracal.ContactForm.list[i].events.connect('submit-success', function(data) {
+				// Ga Event for form submission
 				ga('send', {
 				  hitType: 'event',
 				  eventCategory: 'Form',
 				  eventAction: 'Lead'
 				});
+				// Facebook conversion event
+				fbq('track', 'Lead');
+				// Adwords conversion code
+				function adwTrack() {
+				    var img = new Image(1, 1);
+				    img.src = "https://www.googleadservices.com/pagead/conversion/938641357/?value=1.00&amp;currency_code=EUR&amp;label=q4JdCK-qrHIQzY_KvwM&amp;guid=ON&amp;script=0";
+				}
+				adwTrack();
 				return true;
 			});
 };
