@@ -152,6 +152,7 @@
 				<param name="text" value="copyright_text"/>
 				<param name="light" value=""/>
 			</cms:template>
+			<cms:raw file="parts/google_remarketing.txt"/>
 		</body>
 	</html>
 </document>
