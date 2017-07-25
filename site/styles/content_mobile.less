@@ -15,6 +15,7 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
+	z-index: 100000;
 
 	a.logo {
 		display: inline-block;
@@ -59,16 +60,17 @@ section.header {
 		padding: 0 1em;
 		text-align: center;
 		padding-top: 1em;
+		background-color: @color_blue;
+		color: @color_background;
+		margin-bottom: -1px;
 	}
 
 	article p {
 		margin: 0;
-		color: @color_blue;
 	}
 
 	article h1 {
 		margin: 0;
-		color: @color_blue;
 	}
 }
 
@@ -130,7 +132,14 @@ section.header div.form_container form div.controls button {
 section.features {
 	padding: 1em;
 
-	li {
+	ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	ul li {
 		list-style: none;
 		display: block;
 		width: 300px;
@@ -182,12 +191,10 @@ section.assets {
 */
 
 div.banner {
-	background-image: url(../images/texture.png);
-	background-repeat: repeat;
-	background-size: 100% auto;
-	background-position: center;
 	text-align: center;
 	padding: 50px 0;
+	background-color: @color_blue;
+	border-bottom: 1px solid black;
 }
 
 div.banner a.logo {
@@ -240,7 +247,14 @@ section.benifits {
 	padding-top: 100px;
 	background-color: @color_blue;
 
-	li {
+	ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	ul li {
 		list-style: none;
 		display: inline-block;
 		vertical-align: middle;

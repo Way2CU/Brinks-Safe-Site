@@ -31,6 +31,8 @@
 				<!-- Background image logo -->
 					<a href="top" class="logo"></a>
 
+					<p><cms:text constant="header_msg"/></p>
+
 					<!-- Phone -->
 					<a
 						href="'tel:'.urlencode(Language::get_Text('phone'))"
@@ -69,15 +71,17 @@
 			</section>
 			<!-- section features -->
 			<section class="features">
-				<cms:module
-					name="articles"
-					action="show_list"
-					group="features"
-					template="stock/features_generic.xml"
-					>
-					<param name="title" value=""/>
-					<param name="sprite" value="site_sprite.svg"/>
-				</cms:module>
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="site_sprite.svg"/>
+					</cms:module>
+				</ul>
 			</section>
 			<!-- section images -->
 			<section class="assets">
@@ -106,15 +110,17 @@
 			<!-- section benifits-->
 			<section class="benifits">
 				<!-- Features -->
-				<cms:module
-					name="articles"
-					action="show_list"
-					group="features_benifits"
-					template="stock/features_generic.xml"
-					>
-					<param name="title" value=""/>
-					<param name="sprite" value="site_sprite.svg"/>
-				</cms:module>
+				<ul>
+					<cms:module
+						name="articles"
+						action="show_list"
+						group="features_benifits"
+						template="stock/features_generic.xml"
+						>
+						<param name="title" value=""/>
+						<param name="sprite" value="site_sprite.svg"/>
+					</cms:module>
+				</ul>
 			</section>
 			<!-- Footer -->
 			<footer>

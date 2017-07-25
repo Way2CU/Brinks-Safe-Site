@@ -21,7 +21,7 @@ section.header {
 section.header a.logo {
 	 display: inline-block;
 	 vertical-align: middle;
-	 width: 300px;
+	 width: 250px;
 	 height: 55px;
 
 	 background-image: url(../images/logo.svg);
@@ -37,8 +37,7 @@ section.header a.phone {
 	font-weight: 700;
 	font-size: 3em;
 	text-decoration: none;
-	width: 450px;
-	padding-right: calc(~'(100% - 750px)');
+	width: 420px;
 	direction: ltr;
 
 	
@@ -52,17 +51,35 @@ section.header a.phone {
 	}
 }
 
+section.header p {
+	width: 455px;
+	display: inline-block;
+	color: @color_blue;
+	padding-right: 3rem;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
 section.header article {
 	text-align: center;
 	padding-top:  50px;
+	width: 45%;
+	padding-right: 3rem;
+	text-align: right;
 
 	h1 {
 		font-size: 3em;
 		font-weight: 800;
+		color: @color_background;
+		padding-right: 3rem;
+		width: 70%;
 	}
 
 	p {
 		font-size: 1.5em;
+		color: @color_background;
+		padding-right: 3rem;
+		width: 70%;
 	}
 }
 
@@ -143,7 +160,13 @@ section.header div.form_container form div.controls button {
 section.features {
 	padding: 1em calc(~'(100% - 1200px)' / 2);
 
-	li {
+	ul {
+		display: block;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul li {
 		list-style: none;
 		display: inline-block;
 		vertical-align: top;
@@ -193,12 +216,9 @@ section.assets {
 */
 
 div.banner {
-	background-image: url(../images/texture.png);
-	background-repeat: repeat;
-	background-size: 100% auto;
-	background-position: center;
 	text-align: center;
 	padding: 50px 0;
+	background-color: @color_blue;
 }
 
 div.banner a.logo {
@@ -257,7 +277,13 @@ section.benifits {
 	background-attachment: fixed;
 	padding-top: 100px;
 
-	li {
+	ul {
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	ul li {
 		list-style: none;
 		display: inline-block;
 		vertical-align: middle;
