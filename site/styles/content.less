@@ -39,6 +39,13 @@ section.header a.phone {
 	text-decoration: none;
 	width: 420px;
 	direction: ltr;
+	padding-left: 1.5rem;
+	text-align: right;
+
+	html[dir=rtl] & {
+		padding: 0;
+		text-align: left;
+	}
 
 	
 	svg {
@@ -55,13 +62,17 @@ section.header p {
 	width: 455px;
 	display: inline-block;
 	color: @color_blue;
-	padding-right: 3rem;
+	padding-left: 3rem;
 	font-size: 1.5em;
 	font-weight: 700;
+
+	html[dir=rtl] & {
+		padding-left: 0;
+		padding-right: 3rem;
+	}
 }
 
 section.header article {
-	text-align: center;
 	padding-top:  50px;
 	width: 45%;
 	padding-right: 3rem;
